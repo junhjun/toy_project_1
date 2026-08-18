@@ -1,24 +1,18 @@
-# 아키텍처
+# Architecture
 
-## 디렉토리 구조
+## Shape
+
+{선택한 기술 스택과 핵심 경계만 적는다. 구현 전에 확정되지 않았다면 비워 둔다.}
+
 ```
-src/
-├── app/               # 페이지 + API 라우트
-├── components/        # UI 컴포넌트
-├── types/             # TypeScript 타입 정의
-├── lib/               # 유틸리티 + 헬퍼
-└── services/          # 외부 API 래퍼
+{실제로 사용할 최상위 디렉토리만 표시}
 ```
 
-## 패턴
-{사용하는 디자인 패턴 (예: Server Components 기본, 인터랙션이 필요한 곳만 Client Component)}
+## Boundaries
 
-## 데이터 흐름
-```
-{데이터가 어떻게 흐르는지 (예:
-사용자 입력 → Client Component → API Route → 외부 API → 응답 → UI 업데이트
-)}
-```
+- {입력 → 핵심 로직 → 출력}
+- {외부 서비스나 저장소가 있다면 그 경계}
 
-## 상태 관리
-{상태 관리 방식 (예: 서버 상태는 Server Components, 클라이언트 상태는 useState/useReducer)}
+## Constraints
+
+- {반드시 지켜야 하는 제약만 기록}

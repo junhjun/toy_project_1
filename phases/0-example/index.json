@@ -1,0 +1,9 @@
+{
+  "steps": [
+    {
+      "step": 0,
+      "name": "verify-harness",
+      "status": "pending"
+    }
+  ]
+}
